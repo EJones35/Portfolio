@@ -38,19 +38,19 @@ nav {
 	background-color: var(--nav);
 }
 
-nav a {
+a {
 	color: var(--link);
 	text-decoration: none;
 	transition: 0.2s;
 }
 
-nav a:hover {
+a:hover {
 	opacity: 0.7;
 	transform: scale(1.1);
 	text-decoration: underline;
 }
 
-nav a:focus-visible {
+a:focus-visible {
 	outline: 2px solid var(--link);
 	outline-offset: 4px;
 }
@@ -60,18 +60,6 @@ nav a:focus-visible {
 	gap: 20px;
 	text-align: center;
 	flex-wrap: wrap;
-}
-
-article a {
-	color: var(--link);
-	text-decoration: none;
-	transition: 0.2s;
-}
-
-article a:hover {
-	opacity: 0.7;
-	transform: scale(1.1);
-	text-decoration: underline;
 }
 
 .project-card {
