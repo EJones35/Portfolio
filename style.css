@@ -1,12 +1,11 @@
 :root {
 	--background: midnightblue;
 	--text: white;
-	--header: #9933ff;
+	--header: steelblue;
 	--link: deepskyblue;
 	--link-hover: cyan;
 	--card: darkslateblue;
-	--nav: steelblue;
-	--accent: royalblue;
+	--nav: cornflowerblue;
 }
 
 body {
