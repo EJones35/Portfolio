@@ -8,48 +8,69 @@
 	<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap">
 	
 	<title>Ethan Jones | Developer Portfolio</title>
-</head>
+	</head>
 <body>
 	<header>
 		<h1>Ethan Jones</h1>
 		<p>Python & Web Developer</p>
-	</header>
-	
-	<nav>
-	<a href="#home">Home</a>
-	<a href="#about">About</a>
-	<a href="#experience">Experience</a>
-	<a href="#skills">Skills</a>
-	<a href="#projects">Projects</a>
-	</nav>
+		</header>
+	<div class="nav">
+		<nav class="general">
+			<a href="index.html"><strong>Home</strong></a>
+			<details id="dropdown" class="dropdown">
+				<summary><strong>Experience ↓</strong></summary>
+				<div class="dropdown-menu">
+					<a href="index.html#experience">All Experience</a>
+					<details id="theatre-shows-dropdown" class="roles-dropdown">
+						<summary><strong>Theatre Shows ↓</strong></summary>
+							<div class="roles-dropdown-menu">
+								<a href="theatre-shows.html">All Shows</a>
+								<a href="theatre-shows.html#the-addams-family-musical">The Addams Family Musical</a>
+							</div>
+						</details>
+				</div>
+			</details>
+			<a href="#about"><strong>About</strong></a>
+			<a href="#skills"><strong>Skills</strong></a>
+			<a href="#projects"><strong>Projects</strong></a>
+		</nav>
+	</div>
 
 	<main>
-		<section id="home">
-			<h2>Home</h2>
-			<p>This is the home for my portfolio!</p>
-		</section>
-		<section id="about">
+		<section id="about" class="general-card">
 			<h2>About</h2>
 			<p>I am a developer working with: Python, Godot, HTML, Javascript, CSS and Lua.</p>
 			<a href="https://gist.github.com/EJones35" target="_blank" rel="noopener">Gists</a>
 		</section>
-		<section id="experience">
+		<section id="experience" class="general-card">
 			<h2>Experience</h2>
+			<h3>Theatre</h3>
+			<article class="card">
+				<h4>The Addams Family Musical</h4>
+				<p><strong>Role: </strong>Ancestor</p>
+				<p><strong>Dates: </strong>Thursday 2nd July-Saturday 4th July 2026, 7-9:30pm</p>
+				<a href="theatre-shows.html#the-addams-family-musical">Expanded View</a>
+			</article>
 		</section>
-		<section id="skills">
+		<section id="skills" class="general-card">
 			<h2>Skills</h2>
-			<p>My skills include being able to code, play basic piano and acting.</p>
+			<h3>Coding</h3>
+			<h4>Languages</h4>
+			<h4>Python</h4>
+			<p>My main language of choice.</p>
 		</section>
-		<section id="projects" class="projects">
+		<section id="projects" class="general-card">
 			<h2>Projects</h2>
-			<article class="project-card">
+			<article class="card">
 				<h3>Bridge Command Handbook</h3>
-				<p>This is a handbook for Bridge Command.</p>
+				<p>A handbook for Bridge Command.</p>
+				<p>Currently shows 8/14 roles and a "Coming Soon" page for the dictionary.</p>
 				<a href="https://ejones35.github.io/Bridge-Command-Handbook//" target="_blank" rel="noopener">Project Link</a>
 			</article>
-			<article class="project-card">
+			<article class="card">
 				<h3>EmptyEpsilon 101</h3>
-				<p>This is a beginners guide to EmptyEpsilon.</p>
+				<p>A beginners guide to EmptyEpsilon.</p>
+				<p>Currently shows a template for the roles.</p>
 				<a href="https://ejones35.github.io/EmptyEpsilon-101//" target="_blank" rel="noopener">Project Link</a>
 			</article>
 		</section>

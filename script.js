@@ -1,10 +1,24 @@
-var links = document.querySelectorAll("nav a")
+const dropdown = document.querySelector(".dropdown");
+const summary = dropdown.querySelector("summary");
 
-links.forEach(function(link) {
-	link.addEventListener("click", function(event) {
-		event.preventDefault()
-		var targetId = link.getAttribute("href");
-		var target = document.querySelector(targetId);
-		target.scrollIntoView({ behavior: "smooth" });
-	});
+function closeDropdown() {
+	if (!dropdown.hasAttribute("open")) return;
+	dropdown.removeAttribute("open");
+	summary.focus();
+}
+
+dropdown.querySelectorAll("a").forEach(link => {
+	link.addEventListener("click", closeDropdown);
+});
+
+document.addEventListener("click", (e) => {
+	if (!dropdown.contains(e.target)) {
+		closeDropdown();
+	}
+});
+
+document.addEventListener("keydown", (e) => {
+	if (e.key === "Escape") {
+		closeDropdown();
+	}
 });
