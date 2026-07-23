@@ -1,12 +1,10 @@
 :root {
 	--background: midnightblue;
-	--accent: royalblue;
 	--text: white;
-	--link: deepskyblue;
-	--nav: steelblue;
 	--header: steelblue;
-	--placeholdertext: lightgray;
-	--button: steelblue;
+	--link: deepskyblue;
+	--link-hover: cyan;
+	--card: darkslateblue;
 }
 
 body {
@@ -67,31 +65,4 @@ a:focus-visible {
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0 4px 10px black;
-}
-
-input, textarea {
-	width: 100%;
-	padding: 0.6rem;
-	border: none;
-	border-radius: 4px;
-	background-color: var(--accent);
-	color: var(--text);
-	font-family: inherit;
-}
-
-::placeholder {
-	color: var(--placeholdertext);
-}
-
-input[type="submit"] {
-	background-color: var(--button);
-	color: var(--text);
-	cursor: pointer;
-	font-weight: bold;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
 }
